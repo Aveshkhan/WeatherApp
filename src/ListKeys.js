@@ -95,7 +95,7 @@ export const ListKeys = () => {
         <div className="container mx-auto h-screen w-screen">
           <div className="flex items-center justify-center flex-col h-full">
             <div className="flex justify-center">
-              <div className="mb-3 xl:w-96">
+              <div className="mb-3">
                 <form className=" mb-4" onSubmit={formik.handleSubmit}>
                   <div className='input-group relative flex items-stretch w-full'>
                     <input type="search" name="search" id="search" className={`form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded-l-lg transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-gray-600 focus:outline-none ${formik.touched.search && formik.errors.search ? 'border-red-200' : 'border-gray-300'}`} placeholder="Search city" aria-label="Search" aria-describedby="button-addon2" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.search} />
